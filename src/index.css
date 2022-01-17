@@ -1,13 +1,125 @@
-body {
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono&display=swap');
+
+*{
+  box-sizing: border-box;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body{
+  font-family: 'Space Mono';
+  background-color: hsl(185, 41%, 84%);
+}
+
+.flex-container{
+  display: flex;
+  justify-content: center;
+  margin: 10px;
+}
+
+.header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.column-2{
+  padding: 2.5rem 1rem 1rem 1rem;
+  background-color: hsl(183, 100%, 15%);
+  border-radius: 10px;
+}
+
+.my-content {
+  max-width: 700px;
+  overflow: auto;
+  min-height: 500px;
+  border: 1px solid hsl(0, 0%, 100%);
+  background: hsl(0, 0%, 100%);
+  padding: 50px;
+  border-radius: 30px;
+  height: 80%;
+}
+
+
+.btn{
+  display:inline-block;
+  background: hsl(183, 100%, 15%);
+  border: none;
+  color: hsl(0, 0%, 100%);
+  padding: 10px 20px;
+  margin: 7px;
+  border-radius: 5px;
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 15px;
+  font-family: inherit;
+  font-weight: bold;
+}
+
+.btn:focus{
+  outline: none;
+}
+
+.btn:hover{
+  color: hsl(183, 100%, 15%);
+  background-color: hsl(172, 67%, 45%);
+}
+
+.btn:active{
+  transform: scale(0.98);
+}
+
+ .form-control input{
+  width: 95%;
+  padding: 10px;
+  text-align: right;
+  border-radius: 5px;
+  background-color:hsl(189, 41%, 97%) ;
+} 
+
+.form-control{
+  border: none;
+}
+
+.input-icons i {
+  position: absolute;
+}
+
+.input-icons {
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.icon {
+  padding: 10px;
+  min-width: 40px;
+}
+
+.form-control-check{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.my-tip-text-1{
+  color: white;
+}
+
+.my-tip-text-2{
+  color: grey;
+  font-size: 0.8rem;
+}
+
+.my-tip-h1{
+  color: hsl(172, 67%, 45%);
+  float: right;
+  font-weight: bold;
+  font-size: 2.5rem;
+}
+
+.reset-button{
+  background-color: hsl(172, 67%, 45%);
+  color:hsl(183, 100%, 15%);
+  width: 80%;
 }

@@ -1,12 +1,14 @@
-import React from 'react';
-import './App.css';
-import Home from './components/Home';
-
+import React from "react";
+import Header from "./components/Header";
+import Home from "./components/Home";
 
 function App() {
   return (
-    <div className="App">
-      <Home />
+    <div className="flex-container">
+      <div className="my-content">
+        <Header />
+        <Home />
+      </div>
     </div>
   );
 }
