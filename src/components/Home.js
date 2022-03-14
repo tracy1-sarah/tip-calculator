@@ -1,7 +1,16 @@
-import React from "react";
+import React, {useState} from "react";
 import Button from "./Button";
 
 export default function Home() {
+  const [bill, setBill] = useState("");
+  const [people, setPeople] = useState("");
+
+const handleSubmit = (e)=>{
+  e.preventDefault();
+  const values ={bill, people};
+
+
+}
   return (
     <div className="container">
       <div className="row">
@@ -11,7 +20,11 @@ export default function Home() {
               <label>Bill</label>
               <div className="input-icons">
                 <i className="fa fa-dollar icon"></i>
-                <input type="text" />
+                <input type="text"
+                values ={bill}
+                onChange={(e) => {
+                  setBill(e.target.value);
+                }} />
               </div>
             </div>
 
@@ -30,7 +43,11 @@ export default function Home() {
               <label>Number of People</label>
               <div className="input-icons">
                 <i className="fa fa-user icon"></i>
-                <input type="text" />
+                <input type="text" 
+                values ={people}
+                onChange={(e) => {
+                  setPeople(e.target.value);
+                }} />
               </div>
             </div>
           </form>
@@ -60,6 +77,7 @@ export default function Home() {
           </div>
           <br/>
           <br/>
+          <button className="btn reset-button" onClick={handleSubmit}>CALCULATE</button>
           <button className="btn reset-button">RESET</button>
         </div>
       </div>

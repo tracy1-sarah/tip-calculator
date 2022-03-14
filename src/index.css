@@ -14,7 +14,7 @@ body{
 .flex-container{
   display: flex;
   justify-content: center;
-  margin: 10px;
+  margin: 35px;
 }
 
 .header{
@@ -121,5 +121,7 @@ body{
 .reset-button{
   background-color: hsl(172, 67%, 45%);
   color:hsl(183, 100%, 15%);
-  width: 80%;
+  width: 95%;
+  /* position: relative; */
+  
 }
